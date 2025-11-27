@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=2787e982-df20-45e2-9a64-195c8473be09&lang=ru_RU"></script>
+
+    <title>Ресторан</title> 
+</head>
+<body>
+
+  <!-- шапка -->
+  <header class="hdr">
+    <div class="shell hdr__in">
+      <a class="brand" href="#">
+        <span class="brand__mark">D</span>
+        <span class="brand__name">Taste of Adventure</span>
+      </a>
+      <nav class="nav">
+        <a href="#about">О нас</a>
+        <a href="#menu">Меню</a>
+        <a href="#book">Бронь</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+    <div class="hdr__strip">
+      <div class="shell strip__in">
+        <span>Пн-Чт 11:00–23:00 • Пт-Сб 11:00–02:00 • Вс 11:00–23:00</span>
+        <span>+7 (900) 000-00-00</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- хиро -->
+  <section class="hero">
+    <div class="shell hero__grid">
+      <div class="hero__text">
+        <h1>Taste of Adventure</h1>
+        <p>Мы раскрываем простые продукты на огне и поддерживаем честные гастрономические эмоции. Авторская кухня, выдержанные соусы и сезонные ингредиенты — для тех, кто ценит вкус и атмосферу.</p>
+        <div class="hero__cta">
+          <a class="btn btn--light" href="#menu">Открыть меню</a>
+          <a class="btn" href="#book">Забронировать</a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img src="#" alt="Интерьер ресторана">
+      </div>
+    </div>
+  </section>
+
+  <!-- о ресторане -->
+  <div class="mcon" id="about">
+    <div class="shell">
+      <div class="container">
+        <div class="image">
+          <img src="./img/вино.jpg" alt="Вино и еда">
+        </div>
+        <div class="text1">
+          <h2>О ресторане</h2>
+          <p class="pip">История создания нашего ресторана началась с мечты одного человека – создать уютное место, где каждый гость сможет насладиться вкусной едой, приятной атмосферой и внимательным обслуживанием.</p>
+          <p class="pip">Мы постоянно развиваемся и улучшаем качество наших услуг, чтобы сделать пребывание гостей в нашем ресторане еще более комфортным и приятным.</p>
+          <p class="pip">Приглашаем вас посетить «Taste of Adventure» и, возможно, начать своё собственное кулинарное приключение!</p>
+          <button class="menu-btn">Открыть полное меню</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- популярные блюда -->
+  <section class="mainsec" id="menu">
+    <div class="shell">
+      <h1 class="text2">Популярные блюда</h1>
+
+      <div class="manu2">
+        <ul class="ul1">
+          <li><a href="">Мясные блюда</a></li>
+          <li><a href="">Пицца</a></li>
+          <li><a href="">Салаты и закуски</a></li>
+          <li><a href="">Напитки</a></li>
+        </ul>
+      </div>
+
+      <section class="cards">
+        <!-- карточки -->
+        <div class="card1">
+          <img src="./img/мясо.jpg" alt="">
+          <div class="card_meta">
+            <div class="card_title">Запечённое мясо</div>
+            <div class="card_price">250 руб.</div>
+          </div>
+        </div>
+        <div class="card1">
+          <img src="./img/мясо.jpg" alt="">
+          <div class="card_meta">
+            <div class="card_title">Запечённое мясо</div>
+            <div class="card_price">250 руб.</div>
+          </div>
+        </div>
+        <div class="card1">
+          <img src="./img/мясо.jpg" alt="">
+          <div class="card_meta">
+            <div class="card_title">Запечённое мясо</div>
+            <div class="card_price">250 руб.</div>
+          </div>
+        </div>
+        <div class="card1">
+          <img src="./img/мясо.jpg" alt="">
+          <div class="card_meta">
+            <div class="card_title">Запечённое мясо</div>
+            <div class="card_price">250 руб.</div>
+          </div>
+        </div>
+      </section>
+
+      <button class="cta" type="button">Открыть полное меню</button>
+    </div>
+  </section>
+
+  <!-- бронь -->
+  <section class="book" id="book">
+    <div class="shell book__grid">
+      <form class="book__form">
+        <h3>Бронь стола</h3>
+        <div class="frm-row">
+          <label>Имя<input type="text" required></label>
+          <label>Email<input type="email" required></label>
+        </div>
+        <div class="frm-row">
+          <label>Дата<input type="date" required></label>
+          <label>Время<input type="time" required></label>
+        </div>
+        <label>Гости<input type="number" min="1" max="12" value="2"></label>
+        <label class="chk"><input type="checkbox" required> Согласен на обработку персональных данных</label>
+        <button class="btn btn--light" type="submit">Забронировать</button>
+      </form>
+      <img class="book__photo" src="./img/book.jpg" alt="Зал ресторана">
+    </div>
+  </section>
+
+  <!-- контакты  -->
+  <section class="contacts" id="contacts">
+    <div class="shell contacts__grid">
+      <div class="contacts__card">
+        <h3>Контакты</h3>
+        <p>Телефон: +7 (900) 000-00-00</p>
+        <p>Адрес: г. Гастро, ул. Пороховой, 7</p>
+        <p>Пн-Пт: 11:00–23:00<br>Сб-Вс: 11:00–02:00</p>
+        <a class="btn" href="#book">Как добраться</a>
+      </div>
+      <div class="contacts__map">
+        <div id="y-map" style="width:100%;height:360px;border-radius:16px;overflow:hidden;"></div>
+      </div>
+    </div>
+  </section>
+
+<script>
+  const COORDS = [43.114667, 131.876034];
+  const ADDRESS = 'ул. Тигровая, 7, Владивосток';
+  function initMap() {
+    const map = new ymaps.Map('y-map', {
+      center: COORDS,
+      zoom: 16,
+      controls: ['zoomControl', 'fullscreenControl']
+    });
+    const placemark = new ymaps.Placemark(
+      COORDS,
+      { balloonContentHeader: 'K-TIGRA', balloonContentBody: ADDRESS, hintContent: ADDRESS },
+      { preset: 'islands#orangeIcon' }
+    );
+    map.geoObjects.add(placemark);
+    map.behaviors.disable('scrollZoom');
+  }
+  if (window.ymaps) ymaps.ready(initMap);
+</script>
+
+</body>
+</html>
